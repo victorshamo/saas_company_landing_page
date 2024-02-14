@@ -7,7 +7,7 @@
 :root {
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
-  --dark-color: #fff;
+  --dark-color: #222222;
 }
 
 body {
@@ -72,7 +72,7 @@ img {
 }
 
 .hero .container {
-  background: url('../images/hero-bg.png') no-repeat;
+  background: url("../images/hero-bg.png") no-repeat;
   background-size: contain;
   background-position: center bottom;
   height: 550px;
@@ -102,6 +102,26 @@ img {
   margin-bottom: 20px;
 }
 
+/* Testimonials */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
 
 
 
@@ -195,12 +215,12 @@ img {
 /* Background */
 .bg-primary {
   background: var(--primary-color);
-  color: #fff ;
+  color: #fff;
 }
 
 .bg-light {
   background: var(--light-color);
-  color: #333 ;
+  color: #333;
 }
 
 .bg-dark {
@@ -210,5 +230,13 @@ img {
 
 .bg-black {
   background: #000;
-  color: #fff ;
+  color: #fff;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
 }
