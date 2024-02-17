@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -118,7 +119,7 @@ img {
   gap: 30px;
 }
 
-.testimonials .testimonials .card p:nth-child(2) {
+.testimonials .testimonials-grid .card p:nth-child(2) {
   margin-top: 30px;
   font-weight: bold;
 }
@@ -398,7 +399,7 @@ img {
   height: 100%;
   z-index: 100;
   background: #fff;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
 }
 
@@ -422,7 +423,9 @@ img {
 
 /* Media Queries */
 @media (max-width: 960px) {
-  
+  .text-xxl {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 670px) {
@@ -433,8 +436,61 @@ img {
   .navbar .hamburguer-button {
     display: block;
   }
+
+  .hero .container {
+    background: url("../images/hero-bg-mobile.png") no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+
+  /* Text */
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 500px) {
-  
+  .text-xxl {
+    font-size: 2rem;
+  }
 }
